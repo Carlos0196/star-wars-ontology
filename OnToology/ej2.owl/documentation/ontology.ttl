@@ -1,0 +1,488 @@
+@prefix : <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#> .
+
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars> rdf:type owl:Ontology ;
+                                                                              :creator "Carlos Javier Guzman Guell (carlos-0196)" ;
+                                                                              :name "Star Wars - The Clone Wars Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#creator
+:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#name
+:name rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against
+:against rdf:type owl:ObjectProperty ;
+         owl:inverseOf :enemies ;
+         rdfs:domain :Person ;
+         rdfs:range :Group ;
+         rdfs:comment "Indicates the group an individual is against" ;
+         rdfs:label "against" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf
+:aprenticeOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             owl:inverseOf :masterOf ;
+             rdfs:domain :Person ;
+             rdfs:range :Person ;
+             rdfs:comment "Indicates the aprentice of an individual" ;
+             rdfs:label "aprenticeOf" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies
+:enemies rdf:type owl:ObjectProperty ;
+         rdfs:domain :Group ;
+         rdfs:range :Person ;
+         rdfs:comment "The individuals that are against this group" ;
+         rdfs:label "enemies" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere
+:fromHere rdf:type owl:ObjectProperty ;
+          owl:inverseOf :placeOfOrigin ;
+          rdfs:domain :CelestialObject ;
+          rdfs:range :Entity ;
+          rdfs:comment "The entities that are from the celestial object" ;
+          rdfs:label "fromHere" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf
+:masterOf rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Person ;
+          rdfs:range :Person ;
+          rdfs:comment "Indicates the master of an individual" ;
+          rdfs:label "masterOf" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#member
+:member rdf:type owl:ObjectProperty ;
+        owl:inverseOf :partOf ;
+        rdfs:domain :Group ;
+        rdfs:range :Entity ;
+        rdfs:label "member" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf
+:partOf rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf owl:topObjectProperty ;
+        rdfs:domain :Entity ;
+        rdfs:range :Group ;
+        rdfs:comment "To denote membership of a group" ;
+        rdfs:label "partOf" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin
+:placeOfOrigin rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :Entity ;
+               rdfs:range :CelestialObject ;
+               rdfs:comment "Place from where the individual comes from" ;
+               rdfs:label "placeOfOrigin" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice
+:weaponOfChoice rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                owl:inverseOf :weaponUsers ;
+                rdfs:domain :Entity ;
+                rdfs:range :Weapon ;
+                rdfs:comment "Type of weapon an individual normally chooses" ;
+                rdfs:label "weaponOfChoice" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers
+:weaponUsers rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :Weapon ;
+             rdfs:range :Entity ;
+             rdfs:comment "Owner of the weapon" ;
+             rdfs:label "weaponUsers" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#forceSensitive
+:forceSensitive rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Person ;
+                rdfs:range xsd:boolean ;
+                rdfs:comment "Indicates if an individual is force sensitive or not" ;
+                rdfs:label "forceSensitive" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons
+:numberOfWeapons rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :Entity ;
+                 rdfs:range xsd:nonNegativeInteger ;
+                 rdfs:comment "The number of weapons an individual normally uses" ;
+                 rdfs:label "numberOfWeapons" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce
+:usesDarkSideOfTheForce rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain :Person ;
+                        rdfs:range xsd:boolean ;
+                        rdfs:comment "Indicates that the individual is an user of the dark side of the force" ;
+                        rdfs:label "usesDarkSideOfTheForce" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce
+:usesLightSideOfTheForce rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdfs:domain :Person ;
+                         rdfs:range xsd:boolean ;
+                         rdfs:comment "Indicates that the individual is an user of the light side of the force" ;
+                         rdfs:label "usesLightSideOfTheForce" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Android
+:Android rdf:type owl:Class ;
+         rdfs:subClassOf :Droid ;
+         rdfs:comment "A robot with a human appearance" ;
+         rdfs:label "Android" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject
+:ArtificialCelestialObject rdf:type owl:Class ;
+                           rdfs:subClassOf :CelestialObject ;
+                           owl:disjointWith :NaturalCelestialObject ;
+                           rdfs:comment "A structure that exists in the observable universe" ;
+                           rdfs:label "ArtificialCelestialObject" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialMoon
+:ArtificialMoon rdf:type owl:Class ;
+                rdfs:subClassOf :ArtificialCelestialObject ;
+                rdfs:comment "\"That's no moon\" (Obi-Wan Kenobi)" ;
+                rdfs:label "ArtificialMoon" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Asteroid
+:Asteroid rdf:type owl:Class ;
+          rdfs:subClassOf :NaturalCelestialObject ;
+          rdfs:comment "A large rock" ;
+          rdfs:label "Asteroid" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject
+:CelestialObject rdf:type owl:Class ;
+                 rdfs:comment "A celestial object is a naturally occurring physical entity, association, or structure that exists in the observable universe" ;
+                 rdfs:label "CelestialObject" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Droid
+:Droid rdf:type owl:Class ;
+       rdfs:subClassOf :Entity ;
+       rdfs:comment "A machine capable of carrying out a complex series of actions automatically" ;
+       rdfs:label "Droid" ;
+       rdfs:sameAs "http://dbpedia.org/resource/Robot" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity
+:Entity rdf:type owl:Class ;
+        rdfs:comment "A thing with distinct and independent existence" ;
+        rdfs:label "Entity" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Firearm
+:Firearm rdf:type owl:Class ;
+         rdfs:subClassOf :Weapon ;
+         rdfs:comment "A firearm is any type of gun designed to be readily carried and used by an individual" ;
+         rdfs:label "Firearm" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group
+:Group rdf:type owl:Class ;
+       rdfs:comment "A group of entities with similar views" ;
+       rdfs:label "Group" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#MeleeWeapon
+:MeleeWeapon rdf:type owl:Class ;
+             rdfs:subClassOf :Weapon ;
+             rdfs:comment "Hand weapon or close combat weapon" ;
+             rdfs:label "MeleeWeapon" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Moon
+:Moon rdf:type owl:Class ;
+      rdfs:subClassOf :NaturalCelestialObject ;
+      rdfs:comment "A large, round mass of rock, that moves in a circular path around a planet" ;
+      rdfs:label "Moon" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject
+:NaturalCelestialObject rdf:type owl:Class ;
+                        rdfs:subClassOf :CelestialObject ;
+                        rdfs:comment "A naturally occurring physical entity that exists in the observable universe" ;
+                        rdfs:label "NaturalCelestialObject" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OfficialGroup
+:OfficialGroup rdf:type owl:Class ;
+               rdfs:subClassOf :PoliticalGroup ;
+               owl:disjointWith :OppositionGroup ;
+               rdfs:comment "The government" ;
+               rdfs:label "OfficialGroup" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OppositionGroup
+:OppositionGroup rdf:type owl:Class ;
+                 rdfs:subClassOf :PoliticalGroup ;
+                 rdfs:comment "Organized groups that are opposed, primarily ideologically, to the government" ;
+                 rdfs:label "OppositionGroup" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :Entity ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :partOf ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :ReligiousGroup
+                        ] ;
+        rdfs:comment "A being regarded as an individual" ;
+        rdfs:label "Person" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Planet
+:Planet rdf:type owl:Class ;
+        rdfs:subClassOf :NaturalCelestialObject ;
+        rdfs:comment "An extremely large, round mass of rock and metal or of gas, that moves in a circular path around a star" ;
+        rdfs:label "Planet" ;
+        rdfs:sameAs "http://dbpedia.org/ontology/Planet" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup
+:PoliticalGroup rdf:type owl:Class ;
+                rdfs:subClassOf :Group ;
+                rdfs:comment "A group of entities with similar political views" ;
+                rdfs:label "PoliticalGroup" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ReligiousGroup
+:ReligiousGroup rdf:type owl:Class ;
+                rdfs:subClassOf :Group ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :member ;
+                                  owl:allValuesFrom :Person
+                                ] ;
+                rdfs:comment "A group of entities with similar religious views" ;
+                rdfs:label "ReligiousGroup" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Spaceport
+:Spaceport rdf:type owl:Class ;
+           rdfs:subClassOf :ArtificialCelestialObject ;
+           rdfs:comment "A spaceport is a site for launching spacecraft" ;
+           rdfs:label "Spaceport" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Star
+:Star rdf:type owl:Class ;
+      rdfs:subClassOf :NaturalCelestialObject ;
+      rdfs:comment "A very large ball of burning gas in space" ;
+      rdfs:label "Star" .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon
+:Weapon rdf:type owl:Class ;
+        rdfs:comment "An object used in fighting or war, something used against someone" ;
+        rdfs:label "Weapon" ;
+        rdfs:sameAs "http://dbpedia.org/resource/Weapon" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Anakin_Skywalker
+:Anakin_Skywalker rdf:type owl:NamedIndividual ;
+                  :partOf :GalacticRepublic ,
+                          :JediOrder ;
+                  :placeOfOrigin :Tatooine ;
+                  :weaponOfChoice :Light_Saber ;
+                  :numberOfWeapons 1 ;
+                  :usesDarkSideOfTheForce "false"^^xsd:boolean ;
+                  :usesLightSideOfTheForce "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Count_Dooku
+:Count_Dooku rdf:type owl:NamedIndividual ,
+                      :Person ;
+             :partOf :Separatists ,
+                     :SithOrder ;
+             :forceSensitive "true"^^xsd:boolean ;
+             :usesDarkSideOfTheForce "true"^^xsd:boolean ;
+             :usesLightSideOfTheForce "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#GalacticRepublic
+:GalacticRepublic rdf:type owl:NamedIndividual ,
+                           :OfficialGroup .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#JediOrder
+:JediOrder rdf:type owl:NamedIndividual ,
+                    :ReligiousGroup .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Light_Saber
+:Light_Saber rdf:type owl:NamedIndividual ,
+                      :MeleeWeapon .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Separatists
+:Separatists rdf:type owl:NamedIndividual ,
+                      :OppositionGroup .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#SithOrder
+:SithOrder rdf:type owl:NamedIndividual ,
+                    :ReligiousGroup .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Tatooine
+:Tatooine rdf:type owl:NamedIndividual ,
+                   :Planet .
+
+
+###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#TheEmperor
+:TheEmperor rdf:type owl:NamedIndividual ,
+                     :Person ;
+            :masterOf :Count_Dooku ;
+            :partOf :Separatists ,
+                    :SithOrder ;
+            :numberOfWeapons 1 ;
+            :usesDarkSideOfTheForce "true"^^xsd:boolean ;
+            :usesLightSideOfTheForce "false"^^xsd:boolean .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Asteroid
+                :Moon
+                :Planet
+                :Star
+              )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Anakin_Skywalker
+                        :Count_Dooku
+                        :TheEmperor
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :GalacticRepublic
+                        :Separatists
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :JediOrder
+                        :SithOrder
+                      )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :partOf ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :JediOrder
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :weaponOfChoice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :Light_Saber
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :partOf ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :Separatists
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :against ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :GalacticRepublic
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :partOf ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :SithOrder
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :weaponOfChoice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :Light_Saber
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
