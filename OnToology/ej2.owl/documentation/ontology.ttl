@@ -33,7 +33,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against
 :against rdf:type owl:ObjectProperty ;
          owl:inverseOf :enemies ;
-         rdfs:domain :Person ;
+         rdfs:domain :Entity ;
          rdfs:range :Group ;
          rdfs:comment "Indicates the group an individual is against" ;
          rdfs:label "against" .
@@ -51,10 +51,10 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies
 :enemies rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
          rdfs:domain :Group ;
-         rdfs:range :Person ;
-         rdfs:comment "The individuals that are against this group" ;
-         rdfs:label "enemies" .
+         rdfs:range :Entity ;
+         rdfs:comment "The enemies of the group" .
 
 
 ###  http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere

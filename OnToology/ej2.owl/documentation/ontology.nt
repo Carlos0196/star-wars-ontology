@@ -31,7 +31,7 @@
 # http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against
 <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> .
-<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> .
 <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group> .
 <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the group an individual is against" .
 <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/2000/01/rdf-schema#label> "against" .
@@ -47,10 +47,10 @@
 # 
 # http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies
 <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group> .
-<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
-<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/2000/01/rdf-schema#comment> "The individuals that are against this group" .
-<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/2000/01/rdf-schema#label> "enemies" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/2000/01/rdf-schema#comment> "The enemies of the group" .
 # 
 # http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere
 <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

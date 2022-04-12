@@ -267,7 +267,9 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#numberOfWeapons"
+            <a href="#against"
+               title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against">against</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#numberOfWeapons"
                title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons">numberOfWeapons</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#partOf"
                title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf">partOf</a>
@@ -279,7 +281,9 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#fromHere"
+            <a href="#enemies"
+               title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies">enemies</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#fromHere"
                title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere">fromHere</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#member"
                title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#member">member</a>
@@ -517,9 +521,7 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#against"
-               title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against">against</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#aprenticeOf"
+            <a href="#aprenticeOf"
                title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf">aprenticeOf</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#forceSensitive"
                title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#forceSensitive">forceSensitive</a>
@@ -535,8 +537,6 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#aprenticeOf"
                title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf">aprenticeOf</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#enemies"
-               title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies">enemies</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#masterOf"
                title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf">masterOf</a>
             <sup class="type-op" title="object property">op</sup>
@@ -734,7 +734,9 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#enemies"
-            title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies">enemies</a>
+            title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies">
+            <span>enemies</span>
+         </a>
       </li>
       <li>
          <a href="#fromHere"
@@ -779,8 +781,8 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Person"
-                  title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person">Person</a>
+               <a href="#Entity"
+                  title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity">Entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -845,10 +847,16 @@ This section provides details for each class and property defined by [Ontology N
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies</p>
       <div class="comment">
-         <span class="markdown">The individuals that are against this group</span>
+         <span class="markdown">The enemies of the group</span>
       </div>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Group"
@@ -857,8 +865,8 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Person"
-                  title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person">Person</a>
+               <a href="#Entity"
+                  title="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity">Entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
