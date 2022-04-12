@@ -66,7 +66,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group"/>
         <rdfs:comment>Indicates the group an individual is against</rdfs:comment>
         <rdfs:label>against</rdfs:label>
@@ -92,10 +92,10 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"/>
-        <rdfs:comment>The individuals that are against this group</rdfs:comment>
-        <rdfs:label>enemies</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity"/>
+        <rdfs:comment>The enemies of the group</rdfs:comment>
     </owl:ObjectProperty>
     
 
