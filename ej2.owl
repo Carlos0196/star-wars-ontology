@@ -59,8 +59,11 @@
     <!-- http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group"/>
+        <rdfs:comment>Indicates the group an individual is against</rdfs:comment>
+        <rdfs:label>against</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -73,6 +76,30 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"/>
         <rdfs:comment>Indicates the aprentice of an individual</rdfs:comment>
+        <rdfs:label>aprenticeOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"/>
+        <rdfs:comment>The individuals that are against this group</rdfs:comment>
+        <rdfs:label>enemies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity"/>
+        <rdfs:comment>The entities that are from the celestial object</rdfs:comment>
+        <rdfs:label>fromHere</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -84,6 +111,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"/>
         <rdfs:comment>Indicates the master of an individual</rdfs:comment>
+        <rdfs:label>masterOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -94,6 +122,7 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity"/>
+        <rdfs:label>member</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -105,6 +134,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group"/>
         <rdfs:comment>To denote membership of a group</rdfs:comment>
+        <rdfs:label>partOf</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -116,6 +146,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject"/>
         <rdfs:comment>Place from where the individual comes from</rdfs:comment>
+        <rdfs:label>placeOfOrigin</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -124,9 +155,23 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon"/>
         <rdfs:comment>Type of weapon an individual normally chooses</rdfs:comment>
+        <rdfs:label>weaponOfChoice</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity"/>
+        <rdfs:comment>Owner of the weapon</rdfs:comment>
+        <rdfs:label>weaponUsers</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -149,6 +194,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>Indicates if an individual is force sensitive or not</rdfs:comment>
+        <rdfs:label>forceSensitive</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -160,6 +206,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
         <rdfs:comment>The number of weapons an individual normally uses</rdfs:comment>
+        <rdfs:label>numberOfWeapons</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -171,6 +218,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>Indicates that the individual is an user of the dark side of the force</rdfs:comment>
+        <rdfs:label>usesDarkSideOfTheForce</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -182,6 +230,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>Indicates that the individual is an user of the light side of the force</rdfs:comment>
+        <rdfs:label>usesLightSideOfTheForce</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -202,6 +251,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Android">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Droid"/>
         <rdfs:comment>A robot with a human appearance</rdfs:comment>
+        <rdfs:label>Android</rdfs:label>
     </owl:Class>
     
 
@@ -212,6 +262,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject"/>
         <rdfs:comment>A structure that exists in the observable universe</rdfs:comment>
+        <rdfs:label>ArtificialCelestialObject</rdfs:label>
     </owl:Class>
     
 
@@ -221,6 +272,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialMoon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject"/>
         <rdfs:comment>&quot;That&apos;s no moon&quot; (Obi-Wan Kenobi)</rdfs:comment>
+        <rdfs:label>ArtificialMoon</rdfs:label>
     </owl:Class>
     
 
@@ -230,6 +282,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Asteroid">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject"/>
         <rdfs:comment>A large rock</rdfs:comment>
+        <rdfs:label>Asteroid</rdfs:label>
     </owl:Class>
     
 
@@ -238,6 +291,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject">
         <rdfs:comment>A celestial object is a naturally occurring physical entity, association, or structure that exists in the observable universe</rdfs:comment>
+        <rdfs:label>CelestialObject</rdfs:label>
     </owl:Class>
     
 
@@ -247,6 +301,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Droid">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity"/>
         <rdfs:comment>A machine capable of carrying out a complex series of actions automatically</rdfs:comment>
+        <rdfs:label>Droid</rdfs:label>
         <rdfs:sameAs>http://dbpedia.org/resource/Robot</rdfs:sameAs>
     </owl:Class>
     
@@ -256,6 +311,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity">
         <rdfs:comment>A thing with distinct and independent existence</rdfs:comment>
+        <rdfs:label>Entity</rdfs:label>
     </owl:Class>
     
 
@@ -265,6 +321,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Firearm">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon"/>
         <rdfs:comment>A firearm is any type of gun designed to be readily carried and used by an individual</rdfs:comment>
+        <rdfs:label>Firearm</rdfs:label>
     </owl:Class>
     
 
@@ -273,6 +330,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group">
         <rdfs:comment>A group of entities with similar views</rdfs:comment>
+        <rdfs:label>Group</rdfs:label>
     </owl:Class>
     
 
@@ -282,6 +340,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#MeleeWeapon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon"/>
         <rdfs:comment>Hand weapon or close combat weapon</rdfs:comment>
+        <rdfs:label>MeleeWeapon</rdfs:label>
     </owl:Class>
     
 
@@ -291,6 +350,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Moon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject"/>
         <rdfs:comment>A large, round mass of rock, that moves in a circular path around a planet</rdfs:comment>
+        <rdfs:label>Moon</rdfs:label>
     </owl:Class>
     
 
@@ -300,6 +360,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject"/>
         <rdfs:comment>A naturally occurring physical entity that exists in the observable universe</rdfs:comment>
+        <rdfs:label>NaturalCelestialObject</rdfs:label>
     </owl:Class>
     
 
@@ -310,6 +371,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OppositionGroup"/>
         <rdfs:comment>The government</rdfs:comment>
+        <rdfs:label>OfficialGroup</rdfs:label>
     </owl:Class>
     
 
@@ -319,6 +381,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OppositionGroup">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup"/>
         <rdfs:comment>Organized groups that are opposed, primarily ideologically, to the government</rdfs:comment>
+        <rdfs:label>OppositionGroup</rdfs:label>
     </owl:Class>
     
 
@@ -335,6 +398,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A being regarded as an individual</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
     </owl:Class>
     
 
@@ -344,6 +408,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Planet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject"/>
         <rdfs:comment>An extremely large, round mass of rock and metal or of gas, that moves in a circular path around a star</rdfs:comment>
+        <rdfs:label>Planet</rdfs:label>
         <rdfs:sameAs>http://dbpedia.org/ontology/Planet</rdfs:sameAs>
     </owl:Class>
     
@@ -354,6 +419,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group"/>
         <rdfs:comment>A group of entities with similar political views</rdfs:comment>
+        <rdfs:label>PoliticalGroup</rdfs:label>
     </owl:Class>
     
 
@@ -369,6 +435,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>A group of entities with similar religious views</rdfs:comment>
+        <rdfs:label>ReligiousGroup</rdfs:label>
     </owl:Class>
     
 
@@ -378,6 +445,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Spaceport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject"/>
         <rdfs:comment>A spaceport is a site for launching spacecraft</rdfs:comment>
+        <rdfs:label>Spaceport</rdfs:label>
     </owl:Class>
     
 
@@ -387,6 +455,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Star">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject"/>
         <rdfs:comment>A very large ball of burning gas in space</rdfs:comment>
+        <rdfs:label>Star</rdfs:label>
     </owl:Class>
     
 
@@ -395,6 +464,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon">
         <rdfs:comment>An object used in fighting or war, something used against someone</rdfs:comment>
+        <rdfs:label>Weapon</rdfs:label>
         <rdfs:sameAs>http://dbpedia.org/resource/Weapon</rdfs:sameAs>
     </owl:Class>
     
