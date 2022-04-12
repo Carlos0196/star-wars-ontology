@@ -1,0 +1,145 @@
+{
+  "@context" : {
+    "member" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#member",
+      "@type" : "@id"
+    },
+    "ArtificialCelestialObject" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject"
+    },
+    "Moon" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Moon"
+    },
+    "Android" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Android"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Star" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Star"
+    },
+    "Droid" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Droid"
+    },
+    "ArtificialMoon" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialMoon"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "NaturalCelestialObject" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject"
+    },
+    "usesLightSideOfTheForce" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "usesDarkSideOfTheForce" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Spaceport" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Spaceport"
+    },
+    "Weapon" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person"
+    },
+    "creator" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#creator"
+    },
+    "Asteroid" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Asteroid"
+    },
+    "name" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#name"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "enemies" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies",
+      "@type" : "@id"
+    },
+    "CelestialObject" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject"
+    },
+    "partOf" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf",
+      "@type" : "@id"
+    },
+    "fromHere" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere",
+      "@type" : "@id"
+    },
+    "Planet" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Planet"
+    },
+    "weaponUsers" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers",
+      "@type" : "@id"
+    },
+    "against" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against",
+      "@type" : "@id"
+    },
+    "OppositionGroup" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OppositionGroup"
+    },
+    "MeleeWeapon" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#MeleeWeapon"
+    },
+    "Entity" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "forceSensitive" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#forceSensitive",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "OfficialGroup" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OfficialGroup"
+    },
+    "Group" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group"
+    },
+    "numberOfWeapons" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "PoliticalGroup" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup"
+    },
+    "ReligiousGroup" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ReligiousGroup"
+    },
+    "weaponOfChoice" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice",
+      "@type" : "@id"
+    },
+    "masterOf" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf",
+      "@type" : "@id"
+    },
+    "placeOfOrigin" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin",
+      "@type" : "@id"
+    },
+    "Firearm" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Firearm"
+    },
+    "aprenticeOf" : {
+      "@id" : "http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf",
+      "@type" : "@id"
+    }
+  }
+}

@@ -1,0 +1,474 @@
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#creator> "Carlos Javier Guzman Guell (carlos-0196)" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#name> "Star Wars - The Clone Wars Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#creator
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#name
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the group an individual is against" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> <http://www.w3.org/2000/01/rdf-schema#label> "against" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the aprentice of an individual" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#aprenticeOf> <http://www.w3.org/2000/01/rdf-schema#label> "aprenticeOf" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/2000/01/rdf-schema#comment> "The individuals that are against this group" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#enemies> <http://www.w3.org/2000/01/rdf-schema#label> "enemies" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere> <http://www.w3.org/2000/01/rdf-schema#comment> "The entities that are from the celestial object" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#fromHere> <http://www.w3.org/2000/01/rdf-schema#label> "fromHere" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the master of an individual" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf> <http://www.w3.org/2000/01/rdf-schema#label> "masterOf" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#member
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#member> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#member> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#member> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#member> <http://www.w3.org/2000/01/rdf-schema#label> "member" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.w3.org/2000/01/rdf-schema#comment> "To denote membership of a group" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "partOf" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "Place from where the individual comes from" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin> <http://www.w3.org/2000/01/rdf-schema#label> "placeOfOrigin" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of weapon an individual normally chooses" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice> <http://www.w3.org/2000/01/rdf-schema#label> "weaponOfChoice" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers> <http://www.w3.org/2000/01/rdf-schema#comment> "Owner of the weapon" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponUsers> <http://www.w3.org/2000/01/rdf-schema#label> "weaponUsers" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#forceSensitive
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#forceSensitive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#forceSensitive> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#forceSensitive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#forceSensitive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#forceSensitive> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates if an individual is force sensitive or not" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#forceSensitive> <http://www.w3.org/2000/01/rdf-schema#label> "forceSensitive" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of weapons an individual normally uses" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons> <http://www.w3.org/2000/01/rdf-schema#label> "numberOfWeapons" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the individual is an user of the dark side of the force" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce> <http://www.w3.org/2000/01/rdf-schema#label> "usesDarkSideOfTheForce" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the individual is an user of the light side of the force" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce> <http://www.w3.org/2000/01/rdf-schema#label> "usesLightSideOfTheForce" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Android
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Android> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Android> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Droid> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Android> <http://www.w3.org/2000/01/rdf-schema#comment> "A robot with a human appearance" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Android> <http://www.w3.org/2000/01/rdf-schema#label> "Android" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A structure that exists in the observable universe" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject> <http://www.w3.org/2000/01/rdf-schema#label> "ArtificialCelestialObject" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialMoon
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialMoon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialMoon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialMoon> <http://www.w3.org/2000/01/rdf-schema#comment> "\"That's no moon\" (Obi-Wan Kenobi)" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialMoon> <http://www.w3.org/2000/01/rdf-schema#label> "ArtificialMoon" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Asteroid
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Asteroid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Asteroid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Asteroid> <http://www.w3.org/2000/01/rdf-schema#comment> "A large rock" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Asteroid> <http://www.w3.org/2000/01/rdf-schema#label> "Asteroid" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A celestial object is a naturally occurring physical entity, association, or structure that exists in the observable universe" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject> <http://www.w3.org/2000/01/rdf-schema#label> "CelestialObject" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Droid
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Droid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Droid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Droid> <http://www.w3.org/2000/01/rdf-schema#comment> "A machine capable of carrying out a complex series of actions automatically" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Droid> <http://www.w3.org/2000/01/rdf-schema#label> "Droid" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Droid> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/Robot" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "A thing with distinct and independent existence" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Firearm
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Firearm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Firearm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Firearm> <http://www.w3.org/2000/01/rdf-schema#comment> "A firearm is any type of gun designed to be readily carried and used by an individual" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Firearm> <http://www.w3.org/2000/01/rdf-schema#label> "Firearm" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of entities with similar views" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group> <http://www.w3.org/2000/01/rdf-schema#label> "Group" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#MeleeWeapon
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#MeleeWeapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#MeleeWeapon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#MeleeWeapon> <http://www.w3.org/2000/01/rdf-schema#comment> "Hand weapon or close combat weapon" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#MeleeWeapon> <http://www.w3.org/2000/01/rdf-schema#label> "MeleeWeapon" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Moon
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Moon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Moon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Moon> <http://www.w3.org/2000/01/rdf-schema#comment> "A large, round mass of rock, that moves in a circular path around a planet" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Moon> <http://www.w3.org/2000/01/rdf-schema#label> "Moon" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#CelestialObject> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A naturally occurring physical entity that exists in the observable universe" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject> <http://www.w3.org/2000/01/rdf-schema#label> "NaturalCelestialObject" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OfficialGroup
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OfficialGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OfficialGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OfficialGroup> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OppositionGroup> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OfficialGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "The government" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OfficialGroup> <http://www.w3.org/2000/01/rdf-schema#label> "OfficialGroup" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OppositionGroup
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OppositionGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OppositionGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OppositionGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Organized groups that are opposed, primarily ideologically, to the government" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OppositionGroup> <http://www.w3.org/2000/01/rdf-schema#label> "OppositionGroup" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Entity> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ReligiousGroup> .
+_:genid1 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A being regarded as an individual" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Planet
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Planet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Planet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Planet> <http://www.w3.org/2000/01/rdf-schema#comment> "An extremely large, round mass of rock and metal or of gas, that moves in a circular path around a star" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Planet> <http://www.w3.org/2000/01/rdf-schema#label> "Planet" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Planet> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/ontology/Planet" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of entities with similar political views" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#PoliticalGroup> <http://www.w3.org/2000/01/rdf-schema#label> "PoliticalGroup" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ReligiousGroup
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ReligiousGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ReligiousGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Group> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ReligiousGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#member> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ReligiousGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of entities with similar religious views" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ReligiousGroup> <http://www.w3.org/2000/01/rdf-schema#label> "ReligiousGroup" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Spaceport
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Spaceport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Spaceport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ArtificialCelestialObject> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Spaceport> <http://www.w3.org/2000/01/rdf-schema#comment> "A spaceport is a site for launching spacecraft" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Spaceport> <http://www.w3.org/2000/01/rdf-schema#label> "Spaceport" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Star
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Star> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Star> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#NaturalCelestialObject> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Star> <http://www.w3.org/2000/01/rdf-schema#comment> "A very large ball of burning gas in space" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Star> <http://www.w3.org/2000/01/rdf-schema#label> "Star" .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon> <http://www.w3.org/2000/01/rdf-schema#comment> "An object used in fighting or war, something used against someone" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon> <http://www.w3.org/2000/01/rdf-schema#label> "Weapon" .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Weapon> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/Weapon" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Anakin_Skywalker
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Anakin_Skywalker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Anakin_Skywalker> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#GalacticRepublic> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Anakin_Skywalker> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#JediOrder> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Anakin_Skywalker> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#placeOfOrigin> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Tatooine> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Anakin_Skywalker> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Light_Saber> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Anakin_Skywalker> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Anakin_Skywalker> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Anakin_Skywalker> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Count_Dooku
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Count_Dooku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Count_Dooku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Count_Dooku> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Separatists> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Count_Dooku> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#SithOrder> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Count_Dooku> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#forceSensitive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Count_Dooku> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Count_Dooku> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#GalacticRepublic
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#GalacticRepublic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#GalacticRepublic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OfficialGroup> .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#JediOrder
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#JediOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#JediOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ReligiousGroup> .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Light_Saber
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Light_Saber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Light_Saber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#MeleeWeapon> .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Separatists
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Separatists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Separatists> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#OppositionGroup> .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#SithOrder
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#SithOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#SithOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#ReligiousGroup> .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Tatooine
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Tatooine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Tatooine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Planet> .
+# 
+# http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#TheEmperor
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#TheEmperor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#TheEmperor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Person> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#TheEmperor> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#masterOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Count_Dooku> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#TheEmperor> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Separatists> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#TheEmperor> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#SithOrder> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#TheEmperor> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#numberOfWeapons> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#TheEmperor> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesDarkSideOfTheForce> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#TheEmperor> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#usesLightSideOfTheForce> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid3 <http://www.w3.org/2002/07/owl#members> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Star> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Planet> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Moon> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Asteroid> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid8 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#TheEmperor> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Count_Dooku> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Anakin_Skywalker> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid12 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Separatists> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#GalacticRepublic> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid15 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#SithOrder> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#JediOrder> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid18 <http://www.w3.org/2003/11/swrl#body> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#JediOrder> .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid20 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid18 <http://www.w3.org/2003/11/swrl#head> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Light_Saber> .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid22 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid23 <http://www.w3.org/2003/11/swrl#body> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Separatists> .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid25 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/2003/11/swrl#head> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#GalacticRepublic> .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#against> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid28 <http://www.w3.org/2003/11/swrl#body> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#SithOrder> .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid30 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#partOf> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/2003/11/swrl#head> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#Light_Saber> .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid32 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#weaponOfChoice> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
