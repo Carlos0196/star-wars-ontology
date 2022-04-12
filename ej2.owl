@@ -10,7 +10,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:star-wars-the-clone-wars="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/carlos-0196/ontologies/star-wars-the-clone-wars">
-        <star-wars-the-clone-wars:creator xml:lang="uoc.edu)">Carlos Javier Guzman Guell (carlos-0196</star-wars-the-clone-wars:creator>
+        <star-wars-the-clone-wars:creator>Carlos Javier Guzman Guell (carlos-0196)</star-wars-the-clone-wars:creator>
         <star-wars-the-clone-wars:name>Star Wars - The Clone Wars Ontology</star-wars-the-clone-wars:name>
     </owl:Ontology>
     
